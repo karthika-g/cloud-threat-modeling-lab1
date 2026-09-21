@@ -61,7 +61,7 @@ jobs:
 
   dependency-scan:
     name: Dependency Scan - pip-audit
-    runs-on: ubuntu-latest,node24
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
