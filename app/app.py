@@ -30,9 +30,7 @@ def run_check():
 
     Do not use this pattern in production.
     """
-    cmd = request.args.get("cmd", "echo training")
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-    return jsonify(output=result.stdout.strip())
+    return jsonify(output="training check completed")
 
 
 if __name__ == "__main__":
